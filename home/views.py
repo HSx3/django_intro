@@ -22,5 +22,6 @@ def dinner(request):
 def hello(request, name):
     return render(request, 'hello.html', {'name': name})
     
-def cube(request, number):
-    return render(request, 'cube.html', {'number': number})
+def cube(request, num):
+    nums = num ** 3
+    return render(request, 'cube.html', {'num': num, 'nums': nums})
