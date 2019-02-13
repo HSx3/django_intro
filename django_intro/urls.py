@@ -18,6 +18,7 @@ from django.urls import path
 from home import views # home 디렉토리에 있는 views 불러오기
 
 urlpatterns = [
+    path('home/dinner/', views.dinner, name='dinner'),
     path('home/index/', views.index, name='index'), # views 에 index함수 실행
     path('admin/', admin.site.urls),
 ]
