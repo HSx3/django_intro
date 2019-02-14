@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title%}original{% endblock%}
+
+{% block body %}
+<form action='/utilities/translated/' method="POST">
+    {% csrf_token %}
+    <input type="text" name="text"/>
+    <input type="submit" value="번역하기"/>
+</form>
+{% endblock %}
