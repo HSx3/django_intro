@@ -9,7 +9,7 @@ def index(request):     # request
     # print(type(request))
     # pprint(request.META)    # http 정보 확인
     # return HttpResponse('Welcome to Django!')
-    return render(request, 'index.html')
+    return render(request, 'home/index.html')
     # view를 만들었지만 url이 없으므로 urls.py로 이동
     
 # def dinner(request):
