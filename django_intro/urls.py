@@ -18,6 +18,7 @@ from django.urls import path
 from home import views # home 디렉토리에 있는 views 불러오기
 
 urlpatterns = [
+    path('home/template_example/', views.template_example, name='template_example'),
     path('home/user_create/', views.user_create, name='user_create'),
     path('home/user_new/', views.user_new, name='user_new'),
     path('home/pong/', views.pong, name='pong'),
