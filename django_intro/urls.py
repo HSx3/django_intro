@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
+    path('utilities/', include('utilities.urls')),
     path('home/', include('home.urls')), # views 에 index함수 실행
     path('admin/', admin.site.urls),
 ]
